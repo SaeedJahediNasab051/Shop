@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "YekanBakhBold";
+    src: url(../../assets/fonts/YekanBakhBold.woff) format("woff");
+}
+@font-face{
+    font-family: "YekanBakhHeavy";
+    src: url(../../assets/fonts/YekanBakhHeavy.woff) format("woff");
+}
+@font-face{
+    font-family: "YekanBakhMedium";
+    src: url(../../assets/fonts/YekanBakhMedium.woff) format("woff");
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-right: 50px;
+
+}
+
+.biography h2{
+    font-family: "YekanBakhBold";
+    color: #444444;
+    font-size: 2rem;
+}
+
+.biography p{
+    font-family: "YekanBakhMedium";
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: #858585;
+    padding: 20px 35px 0 0;
+
+}
+
+.AboutMeImage{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: aliceblue;
+}
+
+.AboutMeImage img {
+    margin-top: 50px;
+    width: 400px;
+    transition: .6s ease-in-out;
+}
+
+
+.AboutMeImage img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .AboutMeImage{
+        width: 350px;
+        height: 273px;
+    }
+    .AboutMeImage img{
+        width: 270px;
+    }
+    .biography h2{
+        font-size: 1.5rem;
+    }
+    .biography p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutMe{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .AboutMeImage{
+        width: 100%;
+    }
+    .biography{
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 0;
+    }
+    .biography p{
+        padding: 20px 45px;
+    }
+}
+
+
+
+@media (max-width: 300px) {
+    .AboutMeImage img{
+        width: 150px;
+    }
+}
+  

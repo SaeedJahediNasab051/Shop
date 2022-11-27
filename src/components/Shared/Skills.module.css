@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "YekanBakhBold";
+    src: url(../../assets/fonts/YekanBakhBold.woff) format("woff");
+}
+@font-face{
+    font-family: "YekanBakhHeavy";
+    src: url(../../assets/fonts/YekanBakhHeavy.woff) format("woff");
+}
+@font-face{
+    font-family: "YekanBakhMedium";
+    src: url(../../assets/fonts/YekanBakhMedium.woff) format("woff");
+}
+
+.skills{
+    background: #ebebeb;
+    padding: 50px;
+}
+
+.skills h2{
+    font-family: "YekanBakhBold";
+    color: #444444;
+    font-size: 2rem;
+    margin-bottom: 50px;
+
+}
+
+.itemsSkills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.itemSkills h3{
+    color: #999;
+    padding: 0 50px;
+    font-family: cursive;
+}
+
+@media (max-width: 1000px) {
+    .skills h2{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .itemsSkills{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 350px) {
+    .skills h2{
+        margin-bottom: 20px;
+    }
+}

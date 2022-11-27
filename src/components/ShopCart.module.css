@@ -1,0 +1,235 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 150px 175px 50px;
+  transition: all 0.2s ease;
+  min-height: 400px;
+  /* background-color: #f9f9f9; */
+}
+
+.cartContainer {
+  width: 70%;
+}
+
+.payments {
+  width: 27%;
+  background: #fff;
+  border: 1px solid silver;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.payments p {
+  color: rgb(61, 61, 61);
+  margin: 20px 20px 10px;
+}
+
+.payments p span {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 50px 20px 10px;
+}
+
+.checkout {
+  display: inline-block;
+  background: #34a853;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 9px 16px;
+}
+
+.checkout:hover {
+  background-color: #167d32;
+}
+
+/* .clear {
+  cursor: pointer;
+  color: #34a853;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+} */
+
+.clear{
+  background: transparent;
+  color: #1a73e8;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border: 2px solid #1a73e8;
+  border-radius: 5px;
+  transform: translate(0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.clear::before{
+  content: "";
+  position: absolute;
+  background-color: #1a73e8;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+
+.clear:hover::before{
+  left: calc(100% + 32px);
+  transition: 0.9s;
+}
+
+/* .clear:hover {
+  color: #167d32;
+} */
+
+.complete{
+  width: 100%;
+  align-items: center;
+}
+
+
+.window{
+  width: 300px;
+  background:	#48D1CC ;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+
+}
+
+.window h3 {
+  color: #167d32;
+  margin: 30px 0 50px;
+  font-size: 1.2rem;
+}
+
+.window a {
+  /* background-color: #1a73e8;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 90px;
+  font-weight: bold;
+  line-height: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-left: 5px; */
+
+  display: inline-block;
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 16px;
+  justify-content: center;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+
+  
+  
+}
+
+.window a:hover {
+  background-color: #08499d;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 120px 80px 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 120px 80px 50px;
+    align-items: center;
+  }
+  .cartContainer {
+    width: 100%;
+  }
+
+  .payments {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 120px 40px 50px;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    margin: 120px 20px 50px;
+  }
+}
+
+
+
+/* <!-- HTML !-->
+<button class="button-43" role="button">Button 43</button> */
+
+/* CSS */
+/* .button-43 {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} */
+
+/* .button-43:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+} */
+
+/* @media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+} */

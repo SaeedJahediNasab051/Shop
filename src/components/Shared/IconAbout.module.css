@@ -1,0 +1,46 @@
+.bell {
+    width: fit-content;
+    padding: 7px 7px 0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+}
+
+.bell img {
+    width: 40px;
+}
+
+.bell:hover {
+    cursor: pointer;
+
+}
+
+.bellTex {
+    opacity: 0;
+    background-color: rgba(61, 64, 78, 0.95);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 40px;
+    left: 90px;
+    font-size: small;
+    color: #fff;
+    transition: opacity 0.6s ease-in-out;
+    user-select: none;
+}
+
+.bellBeak {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: calc(50% - 9px);
+    border-right: 10px solid rgba(61, 64, 78, 0.95);
+    border-left: 10px solid transparent;
+    right: 100%;
+}
