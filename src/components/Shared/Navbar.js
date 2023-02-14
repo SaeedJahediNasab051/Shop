@@ -9,7 +9,6 @@ import Burger from './Burger';
 import { CartContext } from '../../context/CartContextProvider';
 import { InputContext } from '../../context/InputContextProvider'
 
-
 //Icons
 import shopIcon from "../../assets/icons/shop.svg"
 import storeIcon from "../../assets/icons/store-solid.svg"
@@ -29,7 +28,6 @@ const Navbar = () => {
     }
     const debouncedChangeHandler = useCallback(debounce(searchHandler, 1000), []);
     
-    
     return (
         <div className={styles.mainContainer}>
             <div className={styles.flex}>
@@ -44,9 +42,9 @@ const Navbar = () => {
                 </div>
                 <div className={styles.logins}>
                     <div className={styles.login}>                     
-                        <Link to="/products/signup">Sign Up</Link>
+                        <Link to="/signup">Sign Up</Link>
                         <p>|</p>
-                        <Link to="/products/login" >Login<img src={bracket} alt="bracket" /></Link> 
+                        <Link to="/login" >Login<img src={bracket} alt="bracket" /></Link> 
                     </div>
                 </div>
             </div>

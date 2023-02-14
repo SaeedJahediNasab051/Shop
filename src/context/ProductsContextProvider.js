@@ -1,11 +1,8 @@
 import React, {useState, useEffect, createContext} from 'react';
-
 //API
 import { getProducts } from '../services/api';
 
-
 export const ProductsContext = createContext()
-
 
 const ProductsContextProvider = ({children}) => {
 
@@ -14,11 +11,9 @@ const ProductsContextProvider = ({children}) => {
     useEffect(() =>{
         const fetchAPI = async () => {
             setProducts(await getProducts());
-            
         }
 
         fetchAPI();
-
     }, [])
 
     return (

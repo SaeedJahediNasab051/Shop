@@ -18,10 +18,11 @@ import styles from "./Product.module.css"
 const Product = ({productData}) => {
 
     const {state, dispatch} = useContext(CartContext);
-    // console.log(productData.image)
+    // console.log(productData.image.length)
+    
     return (
         <div className={styles.container}>
-            <Link to={`/products/${productData.id} `}><img className={styles.cardImage} src= {productData.image} alt= "product" /></Link>
+            <Link to={`/products/${productData.id} `}><img className={styles.cardImage} src= {productData.image}  alt= "product" /></Link>
            
             <h3>{shorten(productData.title)}</h3>
             <p>Price {productData.price} $</p>

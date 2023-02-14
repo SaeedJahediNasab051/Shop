@@ -57,6 +57,7 @@
     margin-top: 50px;
     width: 400px;
     transition: .6s ease-in-out;
+    filter: drop-shadow(2px 2px 10px #808080);
 }
 
 

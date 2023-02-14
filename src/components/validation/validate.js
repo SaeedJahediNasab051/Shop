@@ -2,7 +2,6 @@ export const validate = (data, type) =>{
     
     const errors ={};
 
-
     if (!data.email){
         errors.email = "Email required"
     }else if (!/^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/.test(data.email)) {

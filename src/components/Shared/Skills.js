@@ -32,7 +32,7 @@ const Skills = () => {
                         
                     </div>
                     <div className={styles.itemSkills}>
-                        <h3>Git & GitHup</h3>
+                        <h3>Git & GitHub</h3>
                         <ProgressBar  bgcolor="#e67e22" progress="50" height={30} />
                         
                     </div>

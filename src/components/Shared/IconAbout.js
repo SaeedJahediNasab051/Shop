@@ -6,18 +6,17 @@ import styles from "./IconAbout.module.css"
 //Icons
 import icon from '../../assets/icons/gui_about.svg'
 
-
 const IconAbout = () => {
     const [showing, setShowing] = useState("");
-    const clickHandler = ()=>{
+    const mouseMove = ()=>{
         setShowing(true)
     }
-    const moseOut =()=>{
+    const mouseOut =()=>{
         setShowing(false)
     }
     return (
         <>
-            <Link to="/products/aboutMe" onMouseMove={clickHandler} onMouseOut={moseOut} className={styles.bell}>
+            <Link to="/aboutMe" onMouseMove={mouseMove} onMouseOut={mouseOut} className={styles.bell}>
                     <img src={icon} alt="bell" />
             </Link>
             <div  className={styles.bellTex} style={{opacity:(showing ? 1 : 0 )}} >

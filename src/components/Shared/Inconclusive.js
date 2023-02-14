@@ -9,7 +9,6 @@ import styles from "./Inconclusive.module.css"
 
 const Inconclusive = (props) => {
 
-    
     return (
         <div className={styles.container}>
             <img src={inconclusive} alt="inconclusiv" />

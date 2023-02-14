@@ -36,7 +36,7 @@ const Carousel = () => {
             <Slider {...settings} className={styles.slickSlide}>
                 {imagesData.map((item) => (
                     <div key={item.id}>
-                        <Link to={`/products/carousel/${item.id}`} ><img  src={item.image}  alt={item.alt} /></Link> 
+                        <Link to={`/carousel/${item.id}`} ><img  src={item.image}  alt={item.alt} /></Link> 
                     </div>
                 ))}
             </Slider>

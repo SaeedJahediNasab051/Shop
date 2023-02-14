@@ -11,7 +11,7 @@ import { notify } from "./toast";
 import styles from "./signUp.module.css";
 
 
-const SignUp = () => {
+const SignUp = (props) => {
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -47,7 +47,7 @@ const SignUp = () => {
       
       notify(`Welcome ${data.name}`, "success");
       setTimeout(() => {
-        window.location.href ="/products"
+        props.history.push("/products")
       }, 3000 );
      
       
@@ -139,7 +139,7 @@ const SignUp = () => {
           )}
         </div>
         <div className={styles.formButtons}>
-          <Link to="/products/login">Login</Link>
+          <Link to="/login">Login</Link>
           <button  type="submit">Sign Up</button> 
         </div>
       </form>

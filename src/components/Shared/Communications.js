@@ -15,7 +15,7 @@ const Communications = () => {
     
     const [showing, setShowing] = useState("true");
     const clickHandler = ()=>{
-        setShowing(showing === "true" ? "false" : "true")
+        setShowing(showing === "false" ? "true" : "false")
     }
 
     return (
@@ -26,7 +26,7 @@ const Communications = () => {
                         <p> پس همین الان با من تماس بگیرید.</p>
                     </div>
                     <ul className={styles.ulCommunications}>
-                        <li onClick={clickHandler}><span style={{ display: (showing === "false" ? 'block' : 'none') }}>09384929196</span><img src={phone} alt="phone" /> </li>
+                        <li onClick={clickHandler}><span style={{ display: (showing === "true" ? 'none' : 'block') }}>09384929196</span><img src={phone} alt="phone" /> </li>
                         <li><a href="https://saeedjahedinasab@gmail.com"><img src={email} alt="email" /></a> </li>
                         <li><a href="https://t.me/SaeedJDN"><img src={telegram} alt="telegram" /></a></li>
                         <li><a href="https://wa.link/qh800f"><img src={whatsapp} alt="Whatsapp" /></a></li>
